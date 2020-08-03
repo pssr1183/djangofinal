@@ -1,6 +1,9 @@
+  MY NOTES:
+  
 # my_app = the name of app
 # my_project = the name of project
 # python manage.py help
+
 =======================================================
 1.1. Creating a virtual environment:
 python -m venv my_env
