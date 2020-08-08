@@ -9,7 +9,6 @@ Here you can find two applications, first one is a simple django based calculato
 #### By Rustam-Z
 
 ## MY NOTES:
----
 - my_app = the name of app
 - my_project = the name of project
 - python manage.py help
