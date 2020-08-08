@@ -1,12 +1,14 @@
-• Here you can find two applications, first one is a simple django based calculator (using forms and POST requests), and the second app is TRAVELLO website.
-• If you want to run the project you must create migrations for each apps:
+# Django Telusko
+### Here you can find two applications, first one is a simple django based calculator (using forms and POST requests), and the second app is TRAVELLO website.
+### If you want to run the project you must create migrations for each apps:
+``` bash
      $ python manage.py makemigrations my_app
      $ python manage.py makemigrations travello
      $ python manage.py migrate
+```
+#### By Rustam-Z
 
-• By Rustam-Z
-
-      MY NOTES:
+###      MY NOTES:
   
 # my_app = the name of app
 # my_project = the name of project
