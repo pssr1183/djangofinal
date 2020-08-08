@@ -10,21 +10,26 @@
 
 ###      MY NOTES:
   
-# my_app = the name of app
-# my_project = the name of project
-# python manage.py help
+- my_app = the name of app
+- my_project = the name of project
+- python manage.py help
 
 =======================================================
-1.1. Creating a virtual environment:
+- Creating a virtual environment and creating a Django project:
+``` bash
 python -m venv my_env
-1.2. .\my_env\Scripts\activate
-1.3. pip install Django
-2. django-admin startproject my_project
-3.1. python manage.py startapp my_app
-3.2. include my_app//urls.py to the ROOT urls.py
-4.1. python manage.py migrate
-4.2. python manage.py sqlmigrate my_app 0001
-5.           ...  ... makemigrations my_app
+.\my_env\Scripts\activate
+pip install Django
+django-admin startproject my_project
+python manage.py startapp my_app
+```
+- include my_app/urls.py in the ROOT urls.py
+- Create migratioins
+``` bash 
+python manage.py migrate
+python manage.py sqlmigrate my_app 0001
+python manage.py makemigrations my_app
+```
 =======================================================
 6. Create a folder 'templates' and then go to 'settings.py'
 and in TEMPLATES->DIRS write [os.path.join(BASE_DIR, 'templates')],
