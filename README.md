@@ -27,7 +27,7 @@ python manage.py migrate
 python manage.py sqlmigrate my_app 0001
 python manage.py makemigrations my_app
 ```
-###### Create a folder 'templates', then go to 'settings.py' and in TEMPLATES->DIRS add 
+#### Create a folder 'templates', then go to 'settings.py' and in TEMPLATES->DIRS add 
 ``` python 
 [os.path.join(BASE_DIR, 'templates')],
 ```
@@ -45,7 +45,7 @@ return render(request, 'index.html')
 ```
 - in index.html do not forget to include {% csrf_token %} for security 
 
-###### INFO! MVT/MTV Model-View-Template, Data-Logic-Layout -- We have Model(DataBase) and Template(with DTL Django template language), data from user comes as object and who   will link this? urls is linking, so the main logic is in the views.
+#### INFO! MVT/MTV Model-View-Template, Data-Logic-Layout -- We have Model(DataBase) and Template(with DTL Django template language), data from user comes as object and who   will link this? urls is linking, so the main logic is in the views.
 
 - static file creation in settings.py
 ``` python
@@ -65,7 +65,7 @@ python manage.py collectstatic
   {% load static %}
   <img src="{% static "my_app/example.jpg" %}" alt="My image">
 ```
-###### use blocks, for loop, if/else statement of Django into .html after creating a MODEL in next steps 
+#### use blocks, for loop, if/else statement of Django into .html after creating a MODEL in next steps 
 1. Django ORM->App<-->DataBase is being created automaticly
 2. Download PostgreSQL and PGAdmin 4: Password: Rr87654321 and 0999
 3. then create a database in PG admin, do not forget NAME!
@@ -90,7 +90,7 @@ python manage.py makemigrations
 python manage.py sqlmigrate my_app 0001
 python manage.py migrate
 ```
-###### ADMIN PANEL admin.py -> steps
+#### ADMIN PANEL admin.py -> steps
 1. Haha, Good Job :) Do not forget to register models in admin.py:
   ``` python
     from .models import [ClassName-it is ur model]
@@ -119,7 +119,7 @@ python manage.py createsuperuser
       dests = Destination.objects.all()
       return render(request, "index.html", {'dests' : dests} )
   ```
-###### USER REGISTRATION with forms: id--password--name--mail-> register.html
+#### USER REGISTRATION with forms: id--password--name--mail-> register.html
 1. 
 ``` html
   <form action="register" method="POST">
