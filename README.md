@@ -76,7 +76,7 @@ python manage.py collectstatic
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'telusko', 
         'USER': 'postgres',
-        'PASSWORD': 'Rr87654321',
+        'PASSWORD': '********',
         'HOST': 'localhost',
       }
   }
