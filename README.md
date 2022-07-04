@@ -6,7 +6,7 @@ Here you can find two applications, first one is a simple django based calculato
      $ python manage.py makemigrations travello
      $ python manage.py migrate
 ```
-### By Rustam-Z
+### anonymous
 
 ## MY NOTES:
 - my_app = the name of app
